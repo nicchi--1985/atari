@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33FF283C1EFF81D0543F97ED /* libPods-atariTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD36CBB483E214FB35AFC0B /* libPods-atariTests.a */; };
 		541556A01A4FBBF900CD71FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5415569F1A4FBBF900CD71FD /* main.m */; };
 		541556A31A4FBBF900CD71FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 541556A21A4FBBF900CD71FD /* AppDelegate.m */; };
 		541556A61A4FBBF900CD71FD /* atari.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 541556A41A4FBBF900CD71FD /* atari.xcdatamodeld */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7AC7A2D637F498770ED648 /* Pods-atariTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atariTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-atariTests/Pods-atariTests.release.xcconfig"; sourceTree = "<group>"; };
 		5415569A1A4FBBF900CD71FD /* atari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = atari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5415569E1A4FBBF900CD71FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5415569F1A4FBBF900CD71FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		541556B61A4FBBF900CD71FD /* atariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = atariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		541556BB1A4FBBF900CD71FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		541556BC1A4FBBF900CD71FD /* atariTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = atariTests.m; sourceTree = "<group>"; };
+		CAD36CBB483E214FB35AFC0B /* libPods-atariTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-atariTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91B2BFACF55223481C4F5D7 /* Pods-atariTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-atariTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-atariTests/Pods-atariTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33FF283C1EFF81D0543F97ED /* libPods-atariTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,8 @@
 				5415569C1A4FBBF900CD71FD /* atari */,
 				541556B91A4FBBF900CD71FD /* atariTests */,
 				5415569B1A4FBBF900CD71FD /* Products */,
+				F61C0E34CA4077CDD94F8842 /* Pods */,
+				6EF3F4029609C711F2A51026 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +129,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6EF3F4029609C711F2A51026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAD36CBB483E214FB35AFC0B /* libPods-atariTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F61C0E34CA4077CDD94F8842 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F91B2BFACF55223481C4F5D7 /* Pods-atariTests.debug.xcconfig */,
+				3D7AC7A2D637F498770ED648 /* Pods-atariTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 541556C31A4FBBF900CD71FD /* Build configuration list for PBXNativeTarget "atariTests" */;
 			buildPhases = (
+				D4736415F6F3FCE3EB5E6C84 /* Check Pods Manifest.lock */,
 				541556B21A4FBBF900CD71FD /* Sources */,
 				541556B31A4FBBF900CD71FD /* Frameworks */,
 				541556B41A4FBBF900CD71FD /* Resources */,
+				061966B54CFE9EF66FFC578B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +242,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061966B54CFE9EF66FFC578B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-atariTests/Pods-atariTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4736415F6F3FCE3EB5E6C84 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		541556961A4FBBF900CD71FD /* Sources */ = {
@@ -301,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = atari/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = atari/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -365,6 +426,7 @@
 		};
 		541556C41A4FBBF900CD71FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91B2BFACF55223481C4F5D7 /* Pods-atariTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -384,6 +446,7 @@
 		};
 		541556C51A4FBBF900CD71FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7AC7A2D637F498770ED648 /* Pods-atariTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,6 +479,7 @@
 				541556C21A4FBBF900CD71FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		541556C31A4FBBF900CD71FD /* Build configuration list for PBXNativeTarget "atariTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +488,7 @@
 				541556C51A4FBBF900CD71FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
